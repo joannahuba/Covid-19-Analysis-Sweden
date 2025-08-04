@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Analysis of the COVID-19 Pandemic in Sweden</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #ffffff;
+      color: #2C3E50;
+      padding: 40px;
+      line-height: 1.6;
+      width: 60%;
+      max-width: 1500px;
+      margin: 0 auto;
+
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #2C3E50;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-top: 60px;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      font-weight: normal;
+      font-size: 21px;
+      margin-bottom: 30px;
+    }
+
+    .plot, .object {
+      margin: 20px auto 40px;
+      padding: 20px;
+      border-radius: 12px;
+      background-color: #ffffff;  /* dopasowane do tła strony lub lekko jaśniejsze */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* miękki cień */
+      border: none;  /* usunięcie ramki jeśli cień wystarcza */
+      width: 100%;
+      max-width: 1500px;
+    }
+
+    img, object {
+      display: block;
+      margin: auto;
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    object {
+      height: 600px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Analysis of the COVID-19 Pandemic in Sweden</h1>
+
+  <h2>COVID-19 Cases: Sweden, Nordic Countries, and Europe</h2>
+  <div class="plot">
+    <img src="../images/ani_SWE_NOR_EUR_cases.gif" alt="COVID-19 Case Animation"/>
+  </div>
+  <h3>
+    The first noticeable increase in COVID-19 cases in Sweden occurred in late 2020, followed by a major surge in spring 2021 during the Alpha variant wave. 
+    January 2021 marked a peak in cases for both Sweden and other Nordic countries. While Europe's numbers were lower statistically, this may reflect less extensive testing compared to the Nordic region.
+  </h3>
+
+  <h2>COVID-19 Deaths: Sweden, Nordic Countries, and Europe</h2>
+  <div class="plot">
+    <img src="../images/ani_SWE_NOR_EUR_deaths.gif" alt="COVID-19 Deaths Animation"/>
+  </div>
+  <h3>
+    The data clearly shows that Sweden experienced significantly higher COVID-19 mortality rates compared to other Nordic countries and Europe.
+  </h3>
+
+  <h2>COVID-19 Cases in Nordic Countries</h2>
+  <div class="plot">
+    <img src="../images/multiple_plots_cases.png" alt="Nordic COVID-19 Cases"/>
+  </div>
+  <h3>
+    The total number of cases in each Nordic country followed similar trends, but Sweden reported the highest numbers during the early waves in late 2020 and early 2021.
+  </h3>
+
+  <h2>COVID-19 Deaths in Nordic Countries</h2>
+  <div class="plot">
+    <img src="../images/multiple_plots_deaths.png" alt="Nordic COVID-19 Deaths"/>
+  </div>
+  <h3>
+    Sweden consistently recorded the highest death toll during major pandemic waves among the Nordic countries.
+  </h3>
+
+  <h2>Total Deaths vs COVID-19 Deaths: Sweden vs Europe</h2>
+  <div class="object">
+    <object type="text/html" data="../images/plotly-stack-bar-comparison.html"></object>
+  </div>
+  <h3>
+    In 2020, COVID-19 accounted for approximately 10% of all deaths in Sweden. This proportion confirms the significant impact of the pandemic on national mortality.
+  </h3>
+
+  <h2>COVID-19 Deaths in Sweden by Age Group</h2>
+  <div class="object">
+    <object type="text/html" data="../images/plotly-BAR-deaths_age.html"></object>
+  </div>
+  <h3>
+    COVID-19 posed the greatest risk to individuals over 70, particularly those aged 90 and above.
+  </h3>
+
+  <h1>Economic Impact of COVID-19 in Sweden</h1>
+
+  <h2>Inflation in Sweden and Nordic Countries (2010–2024)</h2>
+  <div class="plot">
+    <img src="../images/plot_inflation_SWE_NOR.png" alt="Inflation Sweden Nordic"/>
+  </div>
+  <h3>
+    The pandemic had a clear economic impact, leading to inflationary pressure across the Nordic region, including Sweden, despite initially avoiding strict lockdowns.
+  </h3>
+
+  <h2>Inflation in Sweden and Europe (2010–2024)</h2>
+  <div class="plot">
+    <img src="../images/plot_inflation_SWE_EUR.png" alt="Inflation Sweden Europe"/>
+  </div>
+  <h3>
+    A significant increase in inflation occurred in 2020 and 2021. Although Sweden’s inflation peaked below the European average, the upward trend followed a similar trajectory.
+  </h3>
+
+  <h2>Unemployment in Sweden and Nordic Countries</h2>
+  <div class="plot">
+    <img src="../images/plot_unemployment_SWE_NOR.png" alt="Unemployment Sweden Nordic"/>
+  </div>
+
+  <h2>Unemployment in Sweden and Europe</h2>
+  <div class="plot">
+    <img src="../images/plot_unemployment_SWE_EUR.png" alt="Unemployment Sweden Europe"/>
+  </div>
+  <h3>
+    Sweden’s unemployment rate increased more noticeably than in other Nordic and European countries. Contributing factors may include high immigration levels, challenges with language integration, and a rigid labor market that makes layoffs difficult due to strong employee protections.
+  </h3>
+
+  <h2>COVID-19 Vaccine Rollout in Sweden</h2>
+  <div class="plot">
+    <img src="../images/plot_vaccine_doses_SWE.png" alt="Vaccine Doses Sweden"/>
+  </div>
+
+  <h2>Cumulative COVID-19 Deaths in Sweden</h2>
+  <div class="plot">
+    <img src="../images/plot_cummulative_deaths_SWE.png" alt="Cumulative Deaths Sweden"/>
+  </div>
+  <h3>After the rollout of COVID-19 vaccination programs, the upward trend in total deaths came to a halt, suggesting a stabilizing effect associated with the immunization efforts.</h3>
+
+</body>
+</html>
