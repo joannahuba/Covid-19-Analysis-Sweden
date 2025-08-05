@@ -1,3 +1,18 @@
+## Project Structure
+
+This repository contains an analysis of COVID-19-related data for Sweden (with some comparisons to other countries). All results are summarized in an interactive HTML report.
+
+###  report.html`
+An HTML file containing all generated plots and conclusions.
+
+###  Folder structure:
+
+- `csv/` – raw datasets used in the analysis
+- `images/` – output plots and visualizations
+- `scripts/` – Python scripts used to generate the plots  
+  *(Script filenames correspond to the names of the plots they produce)*
+
+### Plots and sources
 1. ani_SWE_NOR_EUR_cases.gif
 Animation showing the trend of COVID-19 cases per one million people in Sweden, Europe, and the Nordic countries.
 -data: europe_avg.csv the table that contains statistics about new cases and deaths in european countries per 1mln.
@@ -61,7 +76,7 @@ source: https://ourworldindata.org/covid-vaccinations
 data: SWEDEN-weekly-cases-deaths.csv-table which contains information about  weekly cases and deaths
 source: WHO website
 
-other:
+other data:
 WHO-COVID-19-global-data.csv 
 -dataset from WHO website which contains information about basic statistics of Covid-19 pandemic.
 -Columns: Date_reported-date of the report 
@@ -72,3 +87,25 @@ WHO-COVID-19-global-data.csv
           Cumulative_cases-number of cumulative cases since the begining of pandemic
           New_deaths-number of deaths since last report
           Cumulative_deaths-number of deaths since the beginig of the pandemic
+
+### How to run 
+1. install all tools and requirements
+2. run bash script scripts/save_show_plots.sh with argument
+this script will show all the plots if you call it with -d/--display 
+or save all the plots if you call it with -s/--save
+
+### tools & requirements
+python 3.12
+argparse
+matplotlib
+matplotlib.animation
+matplotlib.dates
+matplotlib.pyplot
+matplotlib.ticker
+os
+pandas
+plotly.graph_objects
+plotly.io
+plot_utils
+pycountry
+pycountry_convert
